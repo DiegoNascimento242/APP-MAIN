@@ -1,5 +1,6 @@
+# APP-MAIN
 
-# Sistema de Aluguel de Chaves para Faculdade
+# Sistema de Reserva de Chaves para Faculdade
 
 Este projeto é um sistema web adesenvolvido para facilitar o gerenciamento de aluguel de chaves dentro de uma instituição de ensino, permitindo que alunos e professores aluguem e devolvam chaves de salas, enquanto administradores têm controle total sobre usuários, aluguéis e chaves.
 
@@ -106,3 +107,4 @@ Os modelos Sequelize refletem as tabelas e relações do banco de dados, facilit
 ### Considerações Finais
 
 Esta estrutura de banco de dados e a implementação do Sequelize oferecem um sistema robusto para gerenciar o aluguel de chaves dentro da faculdade, permitindo funcionalidades complexas como registro e gerenciamento de usuários, chaves e empréstimos de maneira eficaz e segura. É essencial garantir que as referências e relações entre tabelas estejam corretas para manter a integridade dos dados e suportar as operações do sistema de maneira eficiente.
+
