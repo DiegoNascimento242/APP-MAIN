@@ -1,7 +1,7 @@
 
 # Sistema de Aluguel de Chaves para Faculdade
 
-Este projeto é um sistema web desenvolvido para facilitar o gerenciamento de aluguel de chaves dentro de uma instituição de ensino, permitindo que alunos e professores aluguem e devolvam chaves de salas, enquanto administradores têm controle total sobre usuários, aluguéis e chaves.
+Este projeto é um sistema web adesenvolvido para facilitar o gerenciamento de aluguel de chaves dentro de uma instituição de ensino, permitindo que alunos e professores aluguem e devolvam chaves de salas, enquanto administradores têm controle total sobre usuários, aluguéis e chaves.
 
 ## Funcionalidades
 
