@@ -41,9 +41,10 @@ function AddKeyForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const endpoint = formData ? `http://localhost:3333/api/chaves/atualizarChaves/${formData.id}` : 'http://localhost:3333/api/chaves/criarChaves';
-    const method = formData ? 'PUT' : 'POST';
+    const endpoint = location.pathname === "/editar-chave" ? `http://localhost:3333/api/chaves/atualizarChaves/${formData.id}` : 'http://localhost:3333/api/chaves/criarChaves';
+    const method = location.pathname === "/editar-chave" ? 'PUT' : 'POST';
 
+console.warn(location.pathname)
     try {
       const response = await fetch(endpoint, {
         method: method,

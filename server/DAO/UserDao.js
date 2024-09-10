@@ -7,9 +7,10 @@ export const createUser = async (userData) => {
   if (!userData.password) {
     throw new Error('A senha é obrigatória.');
   }
-
+  
   const hashedPassword = await hashPassword(userData.password);
   const user = await User.create({ ...userData, password: hashedPassword });
+  console.log("@@@@",userData)
   return user;
 };
 

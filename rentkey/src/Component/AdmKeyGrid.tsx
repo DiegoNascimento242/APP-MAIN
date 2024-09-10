@@ -51,7 +51,7 @@ function AdmKeyGrid() {
         console.log('ID a ser Editado:', id);
         const keyToEdit = keys.find(key => key.ID === id);
         if (keyToEdit) {
-            navigate('/adicionar-chave', { state: { key: keyToEdit } });
+            navigate('/editar-chave', { state: { key: keyToEdit } });
         }
     };
 

@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<LoginPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/adicionar-chave" element={<AddKeyForm />} />
+          <Route path="/editar-chave" element={<AddKeyForm />} />
           <Route path="/reservar" element={<ReservaForm />} />
           <Route path="/adicionar-usuario" element={<AddUserForm />} />
           <Route path="/adm-chaves" element={<AdmKeyGrid />} />
