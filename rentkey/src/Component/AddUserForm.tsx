@@ -74,8 +74,9 @@ const AddUserForm: React.FC = () => {
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const endpoint = usuario ?` http://localhost:3333/api/usuario/editarUser/${usuario.id}` : `http://localhost:3333/api/usuario/register`;
-        const method = usuario ? 'PUT' : 'POST';
+        const endpoint = location.pathname === "/editar-usuario" ?` http://localhost:3333/api/usuario/editarUser/${usuario.id}` : `http://localhost:3333/api/usuario/register`;
+        const method = location.pathname === "/editar-usuario" ? 'PUT' : 'POST';
+
         const sexo = usuario.sexo === 'Masculino' ? 'M' : usuario.sexo === 'Feminino' ? 'F' : 'Outro';
 
         // Preparando os dados do usuário para envio
@@ -89,6 +90,7 @@ const AddUserForm: React.FC = () => {
             cargo: usuario.cargo,
             tipoUsuario: usuario.tipoUsuario,
         };
+        console.warn(location.pathname)
 
         try {
             const response = await fetch(endpoint, {
